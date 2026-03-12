@@ -117,7 +117,7 @@ header .container .social i {
 /*start interface style*/
 .interface {
     padding: 0;
-    background-image: url(../images/header-background.png);
+    background-image: url(../images/header-background.webp);
     background-size: cover;
     background-repeat: no-repeat;
     border-bottom: 1px solid var(--main-color);
@@ -382,5 +382,6 @@ footer p span a {
 .whatsapp:hover {
     scale: 1.2;
 }
+
 
 /*end ours style*/
