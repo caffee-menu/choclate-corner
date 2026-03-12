@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Playpen+Sans+Arabic:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&family=Playpen+Sans+Arabic:wght@100..800&display=swap");
+
+:root {
+    --main-color: #5A2E22;
+    --shadow-color: #3E2723;
+    --second-color: #fff8f2;
+    --third-color: #b09f8e;
+    --fourth-color: #D8B87A;
+    --red-color: #641616;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Italic' , serif;
+    font-weight: 600;
+    direction: rtl;
+}
+.back {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    filter: brightness(0.8) contrast(0.9);
+}
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+    .contanier {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .contanier {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contanier {
+        width: 1170px;
+    }
+}
+/*start header style*/
+header {
+    background-color: var(--second-color);
+    height: 60px;
+    border-bottom: 1px solid var(--fourth-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    direction: ltr;
+}
+
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header .container a:first-child img { 
+   height: 59px;
+    
+}
+
+
+
+
+header .container .social {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container .social i {
+    margin: 7px;
+    font-size: 17px;
+    display: flex;
+    width: 35px;
+    height: 35px;
+    color: var(--red-color);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+    
+}
+
+.container .social i:hover {
+    scale: 1.1;
+}
+
+/*end header style*/
+.head {
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position: relative;
+background-color: transparent;
+}
+
+    .head p:first-of-type {
+       font-weight: 900;
+       padding: 0 0 20px; 
+    }
+.head h1 {
+    color: var(--fourth-color);
+    font-size: 30px;
+    font-weight: 900;
+    padding: 20px 0;
+}
+
+
+
+.head p {
+    font-size: 20px; 
+    font-weight: 600;
+    padding-bottom: 20px;
+    color: var(--fourth-color);
+}
+
+
+.types {
+    padding: 30px 0px;
+    text-align: center;
+}
+.types .container {
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.type {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0 10px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: var(--second-color);
+    margin: 15px auto;
+    font-weight: bold;
+    font-style: normal;
+    
+    width: 169px;
+    height: 225px;
+    box-shadow: 0 0 2px 1px var(--fourth-color);
+    /* outline: 1px solid var(--red-color); */
+    border: 2px solid var(--fourth-color);
+}
+
+.types .type img {
+    width: 85%;
+    height: 100px;
+    border-radius: 20px;
+    
+}
+.types .type h2 {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--red-color);
+    
+    padding: 5px;
+}
+
+.types .type p {
+    height: 25px;
+    width: 80px;
+    background-color: var(--red-color);
+    border-radius: 20px;
+    
+    font-size: 15px;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    padding-top: 3px;
+}
+.types a {
+    text-decoration: none;
+    box-shadow: 0 0 7px 5px var(--fourth-color);
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--fourth-color);
+    transition: 0.5s;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.types a:hover {
+    box-shadow: 0 0 7px 5px var(--shadow-color);
+    background-color: var(--second-color);
+    color: var(--main-color);
+}
+.fa-turkish-lira-sign {
+    font-size: 12px;
+}
+.type span {
+    color: var(--main-color);
+    font-size: 14px;
+}
