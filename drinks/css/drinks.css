@@ -197,7 +197,7 @@ background-color: transparent;
 
 .types .type p {
     height: 25px;
-    width: 80px;
+    width: 120px;
     background-color: var(--red-color);
     border-radius: 20px;
     
@@ -228,4 +228,5 @@ background-color: transparent;
 .type span {
     color: var(--main-color);
     font-size: 14px;
+
 }
